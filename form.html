@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        i {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <div>
+            <label for="name">Username <i>*</i>: </label><input required id="name" name="uname" type="text" placeholder="Input Your Name Here..." value="">
+        </div>
+        <div>
+            <label for="email">Email <i>*</i>: </label><input required id="email" name="umail" type="email" placeholder="username@gmail.com Here..." value="">
+        </div>
+        <div>
+            <label for="cntr">Country: </label><select id="cntr" name="country">
+            <option value="UA" selected>Ukraine</option>
+            <option value="EU">Euro Union</option>
+            <option value="US">USA</option>
+        </select>
+        </div>
+        <div>
+            <label for="sx">Gender: male</label><input checked type="radio" name="sex" id="sx" value="Male">
+            <label for="ge">Gender: female</label><input type="radio" name="sex" id="ge" value="Female">
+        </div>
+        <input type="submit" value="Send it">
+
+        <div>
+            <i>*</i> - required fields
+        </div>
+
+    </form>
+</body>
+</html>
